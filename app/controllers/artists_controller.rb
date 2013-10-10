@@ -15,14 +15,13 @@ class ArtistsController < ApplicationController
 
 	def edit
 		@artist = Artist.find(params[:id])
-		redirect_to root_path
 	end
 
 	def udpate
 		@artist = Artist.find(params[:id])
 		artist.update_attributes(params[:artist])
 		artist.save
-		redirect_to artist_path(artist)
+		redirect_to root_path
 	end
 
 	def delete
