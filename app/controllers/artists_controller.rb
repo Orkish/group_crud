@@ -15,6 +15,7 @@ class ArtistsController < ApplicationController
 
 	def edit
 		@artist = Artist.find(params[:id])
+		redirect_to root_path
 	end
 
 	def udpate
