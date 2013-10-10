@@ -1,0 +1,9 @@
+
+development:
+  adapter: postgresql
+  database: wdi_morning
+  username: DarthNeel
+  password: 
+  host: localhost
+  pool: 5
+  timeout: 5000
