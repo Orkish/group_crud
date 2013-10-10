@@ -1,0 +1,7 @@
+<%= form_for artist do |f| %>
+<%= f.label "Artist Name:" %>
+<%= f.text_field :name, size: "15"%>
+<%= f.label "Number of Albums:" %>
+<%= f.text_field :number_of_albums, size: "15" %>
+<%= f.submit %>
+<% end %>
