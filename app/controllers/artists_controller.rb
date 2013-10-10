@@ -16,6 +16,13 @@ class ArtistsController < ApplicationController
 	end
 
 	def delete
+		artist = Artist.find(params[:id])
+		artist.destroy
+		redirect 
 	end
 	
+	def show
+		@show = Artist.find(params[:id])
+	end
+
 end
