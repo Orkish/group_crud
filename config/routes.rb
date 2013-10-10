@@ -1,5 +1,6 @@
 GroupCrud::Application.routes.draw do
 
+ root :to => 'artists#index', as: "root"
  resources :artist
 
   # The priority is based upon order of creation:
