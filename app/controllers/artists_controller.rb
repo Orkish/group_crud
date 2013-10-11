@@ -17,10 +17,11 @@ class ArtistsController < ApplicationController
 		@artist = Artist.find(params[:id])
 	end
 
-	def udpate
-		@artist = Artist.find(params[:id])
+	def update
+		artist = Artist.find(params[:id])
 		artist.update_attributes(params[:artist])
 		artist.save
+
 		redirect_to root_path
 	end
 
