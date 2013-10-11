@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+/*
+.content {
+	background-color: rgba(41, 128, 185, .3);
+	border-radius: 10px;
+}
+*/

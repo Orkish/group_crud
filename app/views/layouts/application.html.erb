@@ -6,15 +6,18 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-	<h2> Artists </h2>
-	<hr>
-	<br>
+<div class = "container">
+		<body>
+			<h2> Artists </h2>
+			<hr>
+			<br>
+	<div class = "content">
+		<br>
+		<%= yield %>
+		<br>
 
-<%= yield %>
-<br>
-<br>
-<hr>
-
+		<hr>
+	</div>
+</div>
 </body>
 </html>
