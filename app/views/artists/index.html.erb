@@ -1,13 +1,14 @@
+<div class="row" id="show-button">Click to see artists!</div>
+<div id="artists-div">
+	<ul>
+	<% @artists.each do |artist| %>
+		<li>
+			<h3 class="artist-name">
+			<%= artist.name %>
+			</h3>
+			<p>Number of albums: <%= artist.number_of_albums %></p>
 
-<ul>
-<% @artists.each do |artist| %>
-	<li>
-		<h3>
-		<%= artist.name %>
-		</h3>
-		<p>Number of albums: <%= artist.number_of_albums %></p>
-
-	</li>
-	<% end %>
-</ul>
-
+		</li>
+		<% end %>
+	</ul>
+</div>

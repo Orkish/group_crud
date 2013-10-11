@@ -11,9 +11,32 @@
  *= require_self
  *= require_tree .
  */
-/*
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+
+.page-header {
+	color: white;
+	font-family: "Monoton";
+	font-size: 3em;
+
+}
+
+.artist-name {
+	color: #D62F2A;
+	font-family: "Monoton";
+}
+
 .content {
-	background-color: rgba(41, 128, 185, .3);
+	background-color: rgba(0, 170, 143, 1);
 	border-radius: 10px;
 }
-*/
+
+.bgwrapper {
+	background-image: url("../images/background.png");
+	background-attachment: fixed;
+	height: 100%;
+}
+
+html {
+	background-color: black;
+
+}
