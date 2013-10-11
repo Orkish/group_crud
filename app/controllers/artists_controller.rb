@@ -28,11 +28,11 @@ class ArtistsController < ApplicationController
 	def delete
 		artist = Artist.find(params[:id])
 		artist.destroy
-		redirect '/'
+		redirect_to root_path
 	end
 	
 	def show
-		@show = Artist.find(params[:id])
+		@artist = Artist.find(params[:id])
 	end
 
 end
