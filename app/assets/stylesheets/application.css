@@ -20,9 +20,17 @@
 
 }
 
+.artist-button {
+	margin-left: 10px;
+}
+
 .artist-name {
 	color: #D62F2A;
 	font-family: "Monoton";
+}
+
+#artist-list {
+	margin-left: 10px;
 }
 
 .content {

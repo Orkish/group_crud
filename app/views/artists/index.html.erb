@@ -1,9 +1,11 @@
 
+<div class = "artist-button">
 <%= button_to "New Artist", new_artist_path, :method => :get %>
+</div>
 
 <!-- <div class="row" id="show-button">Click to see artists!</div> -->
 <div id="artists-div">
-	<ul>
+	<ul id = "artist-list">
 	<% @artists.each do |artist| %>
 		<li>
 			<h3 class="artist-name">
