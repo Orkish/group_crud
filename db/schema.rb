@@ -13,11 +13,11 @@
 
 ActiveRecord::Schema.define(:version => 20131010132508) do
 
-  create_table "animal", :force => true do |t|
-    t.string "name",    :limit => 50
-    t.string "age",     :limit => 3
-    t.string "gender",  :limit => 5
-    t.string "species", :limit => 50
+  create_table "animals", :force => true do |t|
+    t.string  "name",    :limit => 50
+    t.integer "age"
+    t.string  "gender",  :limit => 10
+    t.string  "species", :limit => 50
   end
 
   create_table "artists", :force => true do |t|
@@ -27,31 +27,24 @@ ActiveRecord::Schema.define(:version => 20131010132508) do
     t.datetime "updated_at",       :null => false
   end
 
-  create_table "items", :primary_key => "item_id", :force => true do |t|
-    t.string   "title",                                      :null => false
-    t.decimal  "price",       :precision => 19, :scale => 2, :null => false
-    t.text     "description",                                :null => false
-    t.datetime "created_at"
-  end
-
   create_table "morning_colors", :force => true do |t|
-    t.string "color_name"
+    t.string "color_name", :limit => 20
   end
 
   create_table "morning_kittens", :force => true do |t|
-    t.string  "url"
-    t.boolean "is_meow"
+    t.string  "url",     :null => false
+    t.boolean "is_meow", :null => false
+  end
+
+  create_table "morning_users", :force => true do |t|
+    t.string "name",           :limit => 50,  :null => false
+    t.string "street_address"
+    t.string "email",          :limit => 100
   end
 
   create_table "signatures", :force => true do |t|
-    t.text   "note"
+    t.string "note", :limit => 500
     t.string "name", :limit => 50
-  end
-
-  create_table "users", :force => true do |t|
-    t.string "name",           :limit => 100, :null => false
-    t.text   "street_address"
-    t.text   "email_address"
   end
 
 end

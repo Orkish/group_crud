@@ -1,4 +1,4 @@
-
+<%= button_to "New Artist", new_artist_path, :method => :get %>
 <ul>
 <% @artists.each do |artist| %>
 	<li>
@@ -8,6 +8,7 @@
 		<p>Number of albums: <%= artist.number_of_albums %></p>
 
 	</li>
+
 	<% end %>
 </ul>
 
