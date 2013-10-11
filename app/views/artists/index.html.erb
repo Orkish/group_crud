@@ -1,9 +1,13 @@
-<h3>What up!</h3>
 
 <ul>
 <% @artists.each do |artist| %>
 	<li>
+		<h3>
 		<%= artist.name %>
+		</h3>
+		<p>Number of albums: <%= artist.number_of_albums %></p>
+
 	</li>
+	<% end %>
 </ul>
-<% end %>
+
